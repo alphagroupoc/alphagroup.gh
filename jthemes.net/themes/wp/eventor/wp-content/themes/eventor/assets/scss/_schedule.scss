@@ -1,0 +1,119 @@
+/* schedule sec start */
+.schedule-sec {
+    padding-bottom: 100px;
+    position: relative;
+    margin-bottom: 0;
+    .shape {
+        position: absolute;
+        top: 25%;
+        left: 0px;
+        z-index: -1;
+        img {
+            width: 300px;
+            height: 850px;
+        }
+    }
+    
+    .schedule-content-wrap {
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0px 40px 70px rgb(75 3 116 / 15%);
+        border-top: 1px solid rgb(96 86 86 / 20%);
+        .schedule-nav-tab {
+            justify-content: center;
+            .schedule-nav-item {
+                position: relative;
+                
+                button {
+                    background-color: transparent;
+                    color: $text__color;
+                    font-size: 16px;
+                    transition: .6s;
+                    &.active {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: #77BF41;
+                            bottom: 0;
+                            left: 50%;
+                        }
+                    }
+                    
+                }
+                &:hover {
+                    button {
+                        color: var(--#{$prefix}link-hover-color);
+                        transition: .6s;
+                    }
+                }
+            }
+        }
+        .schedule-tab-content {
+            padding: 0px 30px;
+            .schedule-item {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 20px 40px;
+                border-radius: 20px;
+                overflow: hidden;
+                margin-bottom: 30px;
+                transition: 0.4s ease;
+                &:hover {
+                    transform: scale(1.01);
+                    transition: 0.4s ease;
+                    box-shadow: 0px 10px 20px 4px rgb(75 3 116 / 15%);
+                }
+                                .card-description {
+                    .name {
+                        font-size: 16px;
+                        color: var(--bs-primary, $base__color);
+                    }
+                    .date {
+                        font-size: 16px;
+                        color: $text__color;
+                        font-weight: 600;
+                    }
+                    .time {
+                        font-size: 16px;
+                        color: $text__color;
+                        font-weight: 600;
+                    }
+                }
+                .card-title-area {
+                    margin-top: 20px;
+                    .title {
+                        font-size: 18px;
+                        color: $text__color;
+                        font-weight: 600;
+                    }
+                    .title-desc {
+                        font-size: 14px;
+                        color: $text_para__color;
+                        a{
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+                .card-button {
+                    display: inline-flex;
+                    justify-content: center;
+                }
+            }
+        }
+        
+    }
+    .dots {
+        position: absolute;
+        bottom: -51px;
+        right: -35px;
+        opacity: 0.5;
+        z-index: -1;
+    }
+}
+/* schedule sec end */

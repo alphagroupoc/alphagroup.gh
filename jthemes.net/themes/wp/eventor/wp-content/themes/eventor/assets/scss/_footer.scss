@@ -1,0 +1,117 @@
+/* footer area start */
+.footer-area {
+    background-size: cover;
+    background-position: center;
+    .footer-top {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #605656b8;
+        .footer-info {
+            .footer-logo {
+                margin-bottom: 30px;
+                display: block;
+                max-width: 120px;
+            }
+            .footer-desc {
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #BCBCBC;
+                margin-bottom: 40px;
+            }
+            
+        }
+        .footer-social{
+            margin-left: 0;
+        }
+        .widget_nav_menu{
+            .widget-title{
+                margin-bottom: 1.5rem;
+            }
+        }
+        .footer-about {
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                color: #fff;
+                margin-left: 30px;
+                margin-bottom: 35px;
+            }
+        }
+        .footer-enterprise {
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                color: #fff;
+                margin-left: 30px;
+                margin-bottom: 35px; 
+            }
+        }
+        .footer-contact {
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                color: #fff;
+                margin-left: 30px;
+                margin-bottom: 35px; 
+            }
+        }
+    }
+
+    .custom-item {
+        a{
+            line-height: 3;
+            color: #BCBCBC;
+        }
+    }
+
+    hr {
+        color: $text__color;
+    }
+    .footer-copyright-area {
+        span {
+            color: #BCBCBC ;
+            
+        }
+    }
+
+    .wp-block-social-links.is-style-logos-only .wp-social-link svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+
+}
+/* footer area end */
+
+//back to top link
+#scrollUp {
+	width: 48px;
+    height: 48px;
+    color: #fff;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 50 !important;
+    border: 0;
+    transition-duration: 0.2s;
+    background-color: var(--bs-primary);
+    background-image: url(../images/icon/go-top.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    i {
+        display: none;
+        line-height: 42px !important;
+        font-size: 20px;
+        color: #fff;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        transition-duration: 0.2s;
+    }
+}
+

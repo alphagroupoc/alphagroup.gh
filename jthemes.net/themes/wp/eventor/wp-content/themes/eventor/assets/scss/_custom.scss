@@ -1,0 +1,172 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+
+// scss-docs-start theme-color-variables
+$white: #ffffff;
+$primary: #6600CC;
+$dark: #212121;
+$bg-dark: #050718;
+$dark-mode : #1E1E1E;
+$pricing-hov: #292F3A;
+
+
+$black-300: #BCBCBC;
+$black-100: #F3F3F3;
+
+// Toggle global options
+$prefix: bs-;
+$enable-gradients: false;
+$enable-shadows: true;
+$enable-negative-margins: true;
+
+//position
+
+$position : relative; 
+$position-r : $position;
+
+// Gradient
+$gradient-color1: #7579FF;
+$gradient-color2: #B224EF;
+
+
+$gradient-theme: linear-gradient(97.14deg, var(--#{$prefix}gradient-color1) 7.11%, var(--#{$prefix}gradient-color2) 97.04%);
+$gradient-theme-hover: linear-gradient(97.14deg, var(--#{$prefix}gradient-color2) 7.11%, var(--#{$prefix}gradient-color1) 97.04%);
+
+// Spacing
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10: $spacer * 0.625,
+  20: $spacer * 1.25,
+  30: $spacer * 1.875,
+  40: $spacer * 2.5,
+  50: $spacer * 3.125,  
+  60: $spacer * 3.75,
+  70: $spacer * 4.375,
+  100: $spacer * 6.25
+);
+
+// body
+$body-color: #797979;
+
+// Links
+$link-decoration:  none;
+
+// Typography
+$font-size-base: 1rem;
+$font-family-sans-serif: 'Outfit';
+
+// scss-docs-start headings-variables
+$headings-font-weight:  600;
+$headings-color: #212121;
+ 
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2.625;
+$h3-font-size:                $font-size-base * 2.125;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.125;
+$h6-font-size:                $font-size-base;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            400; 
+
+// Buttons + Forms
+$input-color: $dark;
+$input-bg: $black-100;
+$input-focus-bg: #fff;
+$input-btn-focus-width: 0;
+$input-btn-focus-box-shadow: none;
+$input-btn-border-width: 2px;
+$input-border-color: $black-100;
+$input-box-shadow: none;
+
+$input-padding-y: 15px;
+$input-padding-x: 20px;
+
+
+// Buttons
+$btn-padding-y:  0.7625rem;
+$btn-padding-x: 1.75rem;
+$btn-font-size: 1.125rem; // 18px
+$btn-line-height: 1.2;
+$btn-border-width: 2px;
+$btn-font-weight: 500;
+$btn-border-radius: 2rem;
+
+$btn-focus-width: 0;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+
+// Accordion
+$accordion-border-width: 0px;
+$accordion-border-color: transparent;
+$accordion-border-radius: 0px;
+$accordion-icon-color: $dark;
+$accordion-icon-active-color: $dark;
+$accordion-button-color: $dark;
+$accordion-button-active-color: $dark;
+
+$accordion-padding-x: 0;
+$accordion-padding-y: 1.5125rem;
+$accordion-body-padding-x: 0;
+
+$transparent-bg: transparent;
+$accordion-bg: transparent;
+$accordion-button-active-bg: transparent;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: none;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.125 10H16.875' stroke='#{$accordion-icon-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 3.125V16.875' stroke='#{$accordion-icon-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.625 4.375L4.375 15.625' stroke='#{$accordion-icon-active-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M15.625 15.625L4.375 4.375' stroke='#{$accordion-icon-active-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-icon-white:         url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M3.125 10H16.875' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M10 3.125V16.875' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-active-icon-white:  url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15.625 4.375L4.375 15.625' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M15.625 15.625L4.375 4.375' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+
+
+// Navbar
+$navbar-nav-link-padding-x: 12.5px;
+
+$navbar-light-color: $dark;
+$navbar-light-hover-color: rgba($dark, .7);
+$navbar-light-active-color: $primary;
+
+// Badges
+
+// scss-docs-start badge-variables
+$badge-font-size:                   12px;
+$badge-font-weight:                 400;
+$badge-color:                       var(--#{$prefix}primary);
+$badge-padding-y:                   8px;
+$badge-padding-x:                   20px;
+$badge-border-radius:               2rem;
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-focus-shadow-rgb: 9;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: var(--bs-primary);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-gradient: none;
+}

@@ -1,0 +1,134 @@
+body {
+    font-family: var(--eventor-body-font-family, 'Outfit');
+}
+
+.body-wrap {
+    overflow: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+.container {
+    max-width: 1200px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h3 {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: var(--eventor-heading-font-family);
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.custom-btn {
+    border: 2px solid var(--bs-primary, $base__color);
+    --bs-btn-padding-x: calc(1.75rem - 2px);
+    --bs-btn-padding-y: calc(0.7625rem - 2px);
+    background-color: transparent;
+    border-radius: 32px;
+    min-width: 150px;
+    font-size: 18px;
+    color: var(--bs-primary, $base__color);
+    font-weight: 500;
+    &:hover,
+    &:active {
+        color: #fff;
+        --bs-btn-active-color: #fff;
+        border: none;
+        --bs-btn-padding-x: 1.75rem;
+        --bs-btn-padding-y: 0.7625rem;
+        --bs-btn-hover-bg: transparent;
+        --bs-btn-hover-border-color: transparent;
+        background-image: $gradient_hover_color;
+    }
+}
+
+
+.custom-btn2 {
+    border: none;
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    background: $gradient_btn__color;
+    border-radius: 32px;
+    text-align: center;
+    color: white;            
+    box-shadow: none;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background-position: right center; /* change the direction of the change here */
+        background-image: $gradient_hover_color;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.wpcf7-submit.custom-btn2{
+    &:hover {
+        color: #fff;
+    }
+}
+
+.modal {
+    overflow: hidden;
+}
+
+.social {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    li {
+        a {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: black;
+            color: #fff;
+            transition: .7s;
+            
+            &:hover {
+                background: $gradient_btn__color;
+                transition: .7s;
+            }
+        }
+    }
+}
+
+.mode {
+    cursor: pointer;
+}
+.shape {
+    z-index: -1;
+}
+
+hr {
+    color: #605656b8;
+}
+
+.border-color {
+    border-bottom: 1px solid #ececec;
+}
+
+.blog-page {
+    .header-nav-menu {
+        padding-top: 0px!important;
+    }
+}
+

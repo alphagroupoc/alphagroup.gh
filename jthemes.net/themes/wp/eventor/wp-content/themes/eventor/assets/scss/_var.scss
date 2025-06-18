@@ -1,0 +1,11 @@
+$base__color: #6600CC;
+$gradient_base__color: linear-gradient(97.14deg, #7579FF 7.11%, #B224EF 97.04%);
+$gradient_hover_color: linear-gradient(97.14deg, var(--#{$prefix}gradient-color2,#652da0) 7.11%, var(--#{$prefix}gradient-color1,#B224EF) 97.04%);
+$gradient_btn__color: linear-gradient(97.14deg, var(--#{$prefix}gradient-color1, #7579FF) 7.11%, var(--#{$prefix}gradient-color2, #B224EF) 97.04%);
+$gradient_base__color: linear-gradient(97.14deg, var(--#{$prefix}gradient-color1, #7579FF) 7.11%, var(--#{$prefix}gradient-color2, #B224EF) 97.04%);
+$text__color: var(--eventor-text-color, #212121);
+$text_para__color: var(--eventor-text-p-color,#797979);
+$dark__bg__color: var(--eventor-dark-bg-color, #292f3a);
+$dark__text__color: var(--eventor-dark-text-color, #fff);
+$dark__base__color: var(--eventor-dark-badge-color,#91CFEE);
+$dark__text__para__color: var(--eventor-dark-text-p-color,#bcbcbc);
