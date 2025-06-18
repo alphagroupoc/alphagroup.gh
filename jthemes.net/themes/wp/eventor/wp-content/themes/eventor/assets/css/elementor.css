@@ -1,0 +1,9 @@
+.body-wrap .elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: calc(1200px + var(--bs-gutter-x) * 2);
+}
+
+.slick-dots li button::before {
+    content: none;
+}
+
+/*# sourceMappingURL=elementor.css.map */
