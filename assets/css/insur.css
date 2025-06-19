@@ -435,7 +435,7 @@ ul {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-image: url(../images/proff.png);
+  background-image: url(../images/proff.PNG);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60px auto;
